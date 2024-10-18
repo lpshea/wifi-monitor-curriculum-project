@@ -1,14 +1,15 @@
 import './App.css';
 import WifiStatus from './components/wifistatus/wifistatus'
+import MapDisplay from './components/map/mapdisplay'
 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h3>Welcome to the WiFi Heatmap Display Project!</h3>
-        <p>Please follow the README to get started.</p>
+      <header>
+        <p className = 'title'> IS YOUR WIFI GARBAGE? LET US KNOW: </p>
       </header>
+      <MapDisplay/>
       <WifiStatus/>
     </div>
   );
