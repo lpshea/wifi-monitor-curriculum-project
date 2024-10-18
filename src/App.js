@@ -1,4 +1,6 @@
 import './App.css';
+import WifiStatus from './components/wifistatus/wifistatus'
+
 
 function App() {
   return (
@@ -7,6 +9,7 @@ function App() {
         <h3>Welcome to the WiFi Heatmap Display Project!</h3>
         <p>Please follow the README to get started.</p>
       </header>
+      <WifiStatus/>
     </div>
   );
 }
