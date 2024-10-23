@@ -43,3 +43,17 @@
   padding: 20px;
   background-color: lightblue;
 }
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.rightSide {
+  align-items: center;
+  justify-content: center;
+  width: 43%;
+  height: 100%;
+  margin: auto;
+}
