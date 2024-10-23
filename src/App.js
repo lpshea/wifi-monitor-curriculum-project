@@ -1,6 +1,7 @@
 import './App.css';
 import WifiStatus from './components/wifistatus/wifistatus'
 import MapDisplay from './components/map/mapdisplay'
+import Location from './components/location/location';
 
 
 function App() {
@@ -9,8 +10,13 @@ function App() {
       <header>
         <p className = 'title'> IS YOUR WIFI GARBAGE? LET US KNOW: </p>
       </header>
-      <MapDisplay/>
-      <WifiStatus/>
+      <div className="page">
+        <MapDisplay/>
+        <div className="rightSide">
+          <Location />
+          <WifiStatus/>
+        </div>
+      </div>
     </div>
   );
 }

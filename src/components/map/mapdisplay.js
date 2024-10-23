@@ -17,8 +17,8 @@ function MapDisplay() {
         backgroundColor: 'lightblue',
         borderStyle: 'solid',
         borderWidth: 'thin',
-        borderColor: '#25B4E7'
-  
+        borderColor: '#25B4E7',
+        margin: 'auto'
       }}>
         <MapContainer class="mapContainer" center={[37.8719, -122.2585]} zoom={17} scrollWheelZoom={true} style={{height: '100%', width: '100%'}} >
           <TileLayer
