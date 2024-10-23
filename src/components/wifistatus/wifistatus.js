@@ -1,12 +1,10 @@
-import './wifistatus.css';
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-
-
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 function WifiStatus() {
     const [status, setStatus] = React.useState('');
@@ -32,6 +30,10 @@ function WifiStatus() {
                 <MenuItem value={30}>Unstable</MenuItem>
                 </Select>
         </FormControl>
+        <Stack spacing={2} direction="row" sx={{ m: 1, minWidth: '40%', minHeight: '40px', marginTop: '20px', justifyContent: "center"}}>
+          <Button variant="outlined"> Submit Feedback</Button>
+          <Button variant="outlined">Clear Response</Button>
+      </Stack>
     </div>
   );
 }

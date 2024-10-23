@@ -1,9 +1,9 @@
-import './location.css';
 import * as React from 'react';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import Button from '@mui/material/Button';
 
 function Location() {
   const [location, setLocation] = React.useState('');
@@ -29,6 +29,7 @@ function Location() {
                     <MenuItem value={30}>Moffitt Library</MenuItem>
                     </Select>
             </FormControl>
+            <Button variant="outlined" sx={{ m: 1, minWidth: '40%', minHeight: '40px', marginTop: '20px', marginBottom: '30px'}}>Reset Location</Button>
         </div>
       );
       }
